@@ -3,3 +3,8 @@ NUM1=10
 NUM2=Shivaji
 SUM=$(($NUM1+$NUM2))
 echo "sum  is: $SUM"
+
+# Array
+
+Fruits=("Apple" "Banana" "Orange")
+echo " Fruits are: ${Fruits[@]}"
