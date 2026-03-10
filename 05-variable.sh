@@ -10,3 +10,5 @@ echo " please enter your password ::"
 
 read -s PASSWORD
 # beacause of -s option password will not be visible while typing
+
+echo "Password is $PASSWORD"
