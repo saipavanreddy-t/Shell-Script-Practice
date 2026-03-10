@@ -1,12 +1,13 @@
 #!/bin/bash
 
-
-UserID=$(id -u)
-
-If [ $UserID -ne 0 ]; then
-    echo "Please run this script with root user access"
+USERID=$(id -u)
+if [ $USERID-ne 0 ]; then
+    echo "Please run this script as root access"
     exit 1
+else
+    echo "Installing Nginx."
+    dnf install nginx -y
 fi
-echo "Installing nginx "
-dnf install nginx -y
-#please check the exit status of every command u write in the script, if any command fails then we should not proceed with next command, we should exit the script with proper message
+#please check the exit status of every command u write in the script,
+## if any command fails then we should not proceed with next command, we should exit the script
+# with proper message
