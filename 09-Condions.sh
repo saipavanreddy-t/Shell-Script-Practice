@@ -1,4 +1,5 @@
 #!/bin/bash
+
 Number=$1
 
 #-gt-> greater than
