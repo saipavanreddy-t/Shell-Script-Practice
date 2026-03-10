@@ -1,6 +1,6 @@
 #!/bin/bash
-PERSON1=Suresh #no space allowed while assigning value to variable
-PERSON2=Ramesh
+PERSON1=Reddy    #no space allowed while assigning value to variable
+PERSON2=Kumar
 
 echo " ${PERSON1} : hello ${PERSON2},how are you ?"
 echo " ${PERSON2} : I am fine ${PERSON1}, how are you ?"
