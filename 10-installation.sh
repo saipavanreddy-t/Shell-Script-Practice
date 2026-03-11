@@ -19,15 +19,6 @@ else
     echo "Nginx installed successfully."
 fi
 
-yum install yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm -y
-yum install mysql-community-server -y
-
-if [ $? -ne 0 ]; then
-    echo "MySQL installation failed, please check the error message and fix it."
-    exit 1
-else
-    echo "MySQL installed successfully."
-fi
 dnf install nodejs -y
 
 if [ $? -ne 0 ]; then
