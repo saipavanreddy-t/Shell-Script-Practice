@@ -18,7 +18,7 @@ else
 fi
 }
 
-for package in $@ #sudo sh 14-loops.sh nginx nodejs mariadb105 php
+for package in $@ #sudo sh 14-loops.sh nginx nodejs mariadb105 php redis  
 
 do
 dnf installed $package -y &>> $LOGS_FILE
