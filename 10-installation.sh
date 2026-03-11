@@ -19,7 +19,7 @@ else
     echo "Nginx installed successfully."
 fi
 
-dnf install mysqld -y
+dnf install mysql-sever -y
 
 if [ $? -ne 0 ]; then
     echo "MySQL installation failed, please check the error message and fix it."
