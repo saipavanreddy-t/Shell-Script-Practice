@@ -14,7 +14,7 @@ validate(){
     echo "$2.. Failure" | tee -a $LOGS_FILE
     exit 1
 else
-    echo "$2 successfully."
+    echo "$2 successfully." | tee -a $LOGS_FILE
 fi
 }
 
